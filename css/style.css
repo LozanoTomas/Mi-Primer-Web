@@ -1,0 +1,728 @@
+ /* #262626
+#F2BB16
+#F2E963 */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(https://c.wallhere.com/photos/e8/eb/pattern_wood-156690.jpg!d);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-weight: 500;
+    color: #F2BB16;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+    margin-left: auto;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem;  
+    color: #262626;
+}
+
+li a:hover {
+    background: #262626;
+    color: white;
+}
+
+.logo {
+    height: 70px;
+    width: 70px; 
+    padding: 0.5rem;  
+    box-sizing: border-box;
+}
+.tittle {
+    display: inline-block;
+    margin-left: 1.5rem; 
+    font-size: 2.6rem;
+    color: #262626;
+}
+
+.navegacion {
+    font-size: 2.5rem;  
+    margin-left: 37%;
+    margin-top: 1.2rem;
+}
+
+p {
+    color: #F2BB16;
+    font-size: 1.5rem;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    padding-bottom: 0.2rem;
+    background-color: #F2BB16;
+}
+
+footer {
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.link-footer {
+    color: white;
+}
+
+.link-footer:hover {
+    color: #F2BB16;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    color: white;
+    margin-right: 20rem;
+}
+
+.links {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.derechos{
+    display: inline-block;
+    color: white;
+    margin-right: 1rem;
+}
+
+h3 {
+    color: #F2BB16;
+}
+
+/* pagina de inicio */ 
+
+.slogan {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300px;
+    text-align: justify;
+    margin-left: 9rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.boton {
+    width: 5rem;
+    background-color: #262626;  
+    display: inline;
+    padding: 18px 88px;
+    border-radius: 5rem;
+    margin-left: 9rem;
+    border: 0.5px solid white;
+}
+
+.adentro {
+    color: white; 
+}
+
+.text {
+    margin-left: 9rem;
+    font-size: 7rem;
+    margin-bottom: 2.5rem;
+    margin-top: 5rem;
+}
+
+.boton:hover {
+    background-color: #F2BB16;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "nav nav nav"
+        "contenido contenido carousel"
+        "footer footer footer"    
+    ;
+    grid-row-gap: 1rem;
+}
+
+.grid-header {
+    grid-area: nav;
+}
+
+.grid-main {
+    grid-area: contenido;
+}
+
+.grid-carousel {
+    grid-area: carousel;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
+.slide {
+    margin-right: 10rem;
+    border: 4px solid #F2BB16;
+    margin-top: 3rem;
+}
+
+.carousel-item {
+    width: 40rem;
+    height: 50rem;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* pagina de servicios */
+
+.titulo {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 6rem;
+}
+
+.slogan2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.subtitulo {
+    justify-content: center;
+    font-size: 3.5rem;
+    margin-top: 16rem;
+    color: #F2BB16;
+}
+
+.info {
+    color: white;
+}
+
+.demostrativa {
+    width: 300px;
+    height: 280px;
+    border-radius: 1rem;
+}
+
+.secciones {
+    display: inline-block;
+    justify-content: center;
+    margin-right: 5rem;
+    margin-top: 5rem;
+}
+
+.abarcacion {
+    align-items: center;
+    margin-left: 10rem;
+}
+
+/* pagina nosotros */ 
+
+.zona {
+    font-size: 6rem;
+    margin-left: 26rem;
+    margin-top: 5.3rem;
+}
+
+.texto {  
+    font-size: 2.5rem;
+    color: #F2BB16;
+}
+
+.imgcostado {
+    width: 600px;
+    height: 850px;
+    margin-left: 4rem;
+    margin-top: 5rem;
+}
+
+.txt {
+    margin-left: 8rem;
+    text-align: justify;
+    margin-top: 3rem;
+}
+
+.imgs {
+   height: 45px;
+   width: 45px;
+   padding: 5px;
+}
+
+.sede {
+    font-size: 5rem;
+    margin-left: 13.8rem; 
+    color: #F2BB16;
+    display: inline;
+}
+
+.city {
+    font-size: 2.5rem;
+    margin-left: 18rem;
+    color: #F2BB16;
+    display: flex;
+}
+
+.contenido {
+    display: flex;
+    margin: 2rem;
+    margin-left: 15rem;
+    align-items: center;
+}
+
+.mini {
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.map { 
+    margin-right: 8rem;
+}
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 100rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "tienda tienda imagen"
+    "importante importante mapeado"
+    "pie pie pie"
+    ;
+    grid-row-gap: 1rem;
+}
+
+.grid-head {
+    grid-area: cabeza;
+}
+
+.grid-seccion {
+    grid-area: tienda;
+}
+
+.grid-image {
+    grid-area: imagen;
+}
+
+.grid-informacion {
+    grid-area: importante;
+}
+
+.grid-localizacion {
+    grid-area: mapeado;
+}
+
+.grid-pie {
+    grid-area: pie;
+}
+
+/* pagina de marcas */ 
+
+.tit {
+    font-size: 7rem;
+    margin-left: 9rem;
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+}
+
+.parrafo {
+    font-size: 2rem;
+    margin-left: 9rem;
+    margin-bottom: 6rem;
+}
+
+.click {
+    width: 5rem;
+    background-color: #262626;  
+    display: inline;
+    padding: 18px 88px;
+    border-radius: 1rem;
+    margin-left: 9rem;
+    border: 0.5px solid white;
+}
+
+b {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.click:hover {
+    background: #F2BB16;
+    color: #262626;
+}
+
+.abajo {
+    font-size: 2rem;
+    color: #F2BB16;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.recomendaciones {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+/* pagina contacto */ 
+
+.contactanos {
+    color: #F2BB16;
+    font-size: 3.5rem;
+    display: inline-block;
+    margin-left: 50rem;
+}
+
+.preg {
+    font-size: 2rem;
+    display: inline-block;
+    color: white;
+    margin-left: 3rem;
+}
+
+.mensaje {
+    display: inline;
+    text-align: center;
+}
+
+.mensaje-titulo {
+    color: white;
+    font-size: 4rem;
+}
+
+.parrafo-abajo {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* pagina para celulares */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 6.7rem auto auto 35rem;
+        grid-template-areas: 
+            "nav nav nav"
+            "contenido contenido contenido"
+            "carousel carousel carousel"
+            "footer footer footer"    
+        ;
+        grid-row-gap: 1rem;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8rem;
+    }
+
+    .tittle {
+        font-size: 1.2rem;
+        margin-bottom: 8rem;
+        margin-left: 0;
+    }
+
+    .navegacion {
+        font-size: 0.2rem;
+        margin-left: 0;
+    }
+
+    .text {
+        font-size: 3rem;
+        margin-left: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .slogan {
+        font-size: 1.5rem;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+
+    .boton {
+        padding: 7px 55px;
+        border: 0.1px solid white;
+        margin-left: 3rem;
+    }
+
+    .leer {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+        display: flex;
+        margin: 0;
+        margin-right: 4rem;
+    }
+
+    .derechos {
+        font-size: 1rem;
+        display: inline-block;
+        margin: 0;
+        margin-right: 11rem;
+    }
+
+    .slide {
+        width: 40rem;
+        height: 30rem;
+        margin-left: 8rem;
+        margin-top: 5rem;
+        align-items: center;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 293px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 64rem;
+        margin-left: 7rem;
+    }
+
+    .logoslink {
+        width: 12px;
+        height: 12px;
+    }
+
+    .links {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+}
+
+/* pagina tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 90rem auto auto auto;
+        grid-template-rows: 10.1rem auto auto 35rem;
+        grid-template-areas: 
+            "nav nav nav"
+            "contenido contenido contenido"
+            "carousel carousel carousel"
+            "footer footer footer"    
+        ;
+        grid-row-gap: 1rem;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 8rem;
+    }
+
+    .tittle {
+        font-size: 2.9rem;
+        margin-bottom: 8rem;
+        margin-left: 0;
+    }
+
+    .navegacion {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .text {
+        font-size: 4.5rem;
+        margin-left: 5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .slogan {
+        font-size: 2.3rem;
+        margin-left: 5rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+
+    .boton {
+        padding: 23px 110px;
+        border: 0.1px solid white;
+        margin-left: 5rem;
+    }
+
+    .leer {
+        font-size: 2.1rem;
+    }
+
+    h4 {
+        font-size: 2.3rem;
+        display: flex;
+        margin: 0;
+        margin-right: 4rem;
+    }
+
+    .derechos {
+        font-size: 2.3rem;
+        display: inline-block;
+        margin: 0;
+        margin-right: 11rem;
+    }
+
+    .slide {
+        width: 70rem;
+        height: 50rem;
+        margin-top: 7rem;
+        margin-left: 10rem;
+    }
+
+    .slide img {
+        width: 799px;
+        height: 492px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-left: 7rem;
+        margin-bottom: 12rem;
+    }
+
+    .logoslink {
+        width: 20px;
+        height: 20px;
+    }
+
+    .links {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
+
+/* pagina desktop */
+
+/* @media screen and (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 8rem auto auto auto;
+        grid-template-areas: 
+            "nav nav nav"
+            "contenido contenido carousel"
+            "footer footer footer"    
+        ;
+        grid-row-gap: 1rem;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 8rem;
+    }
+
+    .tittle {
+        font-size: 2.3rem;
+        margin-bottom: 8rem;
+        margin-left: 0;
+    }
+
+    .navegacion {
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 7.8rem;
+        margin-left: 18rem;
+    }
+
+    .text {
+        font-size: 5rem;
+        margin-left: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .slogan {
+        font-size: 2.3rem;
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+
+    .boton {
+        padding: 18px 100px;
+        border: 0.1px solid white;
+        margin-left: 4rem;
+    }
+
+    .leer {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        display: flex;
+        margin: 0;
+        margin-right: 4rem;
+    }
+
+    .derechos {
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0;
+        margin-right: 3rem;
+    }
+
+    .slide {
+        width: 35rem;
+        height: 40rem;
+        margin-right: 3rem;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 393px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 20rem;
+    }
+
+    .logoslink {
+        width: 18px;
+        height: 18px;
+    }
+
+    .links {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
+
+
