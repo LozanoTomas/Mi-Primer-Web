@@ -54,8 +54,9 @@ li a:hover {
 
 .navegacion {
     font-size: 2.5rem;  
-    margin-left: 37%;
+    margin-left: 97%;
     margin-top: 1.2rem;
+    display: flex;
 }
 
 p {
@@ -111,6 +112,10 @@ h4 {
 
 h3 {
     color: #F2BB16;
+}
+
+.hdp {
+    color: black;
 }
 
 /* pagina de inicio */ 
@@ -198,13 +203,13 @@ h3 {
 .titulo {
     text-align: center;
     font-size: 6rem;
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 .slogan2 {
     text-align: center;
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .subtitulo {
@@ -214,8 +219,15 @@ h3 {
     color: #F2BB16;
 }
 
+h3 {
+    margin-top: 1rem;
+}
+
 .info {
     color: white;
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 .demostrativa {
@@ -234,6 +246,14 @@ h3 {
 .abarcacion {
     align-items: center;
     margin-left: 10rem;
+}
+
+.grid-header {
+    grid-area: nav;
+}
+
+.grid-footer {
+    grid-area: footer;
 }
 
 /* pagina nosotros */ 
@@ -296,6 +316,7 @@ h3 {
 
 .map { 
     margin-right: 8rem;
+    width: 600px; height: 450px;
 }
 
 .grid-contenedor {
@@ -303,16 +324,16 @@ h3 {
     grid-template-columns: auto;
     grid-template-rows: auto 100rem;
     grid-template-areas: 
-    "cabeza cabeza cabeza"
+    "nav nav nav"
     "tienda tienda imagen"
     "importante importante mapeado"
-    "pie pie pie"
+    "footer footer footer"
     ;
     grid-row-gap: 1rem;
 }
 
-.grid-head {
-    grid-area: cabeza;
+.grid-header {
+    grid-area: nav;
 }
 
 .grid-seccion {
@@ -331,8 +352,8 @@ h3 {
     grid-area: mapeado;
 }
 
-.grid-pie {
-    grid-area: pie;
+.grid-footer {
+    grid-area: footer;
 }
 
 /* pagina de marcas */ 
@@ -341,7 +362,7 @@ h3 {
     font-size: 7rem;
     margin-left: 9rem;
     margin-bottom: 4rem;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .parrafo {
@@ -383,6 +404,45 @@ b {
     margin-top: 15rem;
 }
 
+.imagen-marcas {
+    width: 600px;
+    height: 400px;
+    margin-top: 7rem;
+    border: 5px solid #F2BB16;
+}
+
+.grid-marcas {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "principal principlal marco"
+    "movimiento movimiento movimiento"
+    "footer footer footer";
+    grid-row-gap: 1rem;
+}
+
+.grid-header {
+    grid-area: nav;
+}
+
+.grid-mainn {
+    grid-area: principal;
+}
+
+.grid-mosaico {
+    grid-area: marco;
+}
+
+.grid-muestra {
+    grid-area: movimiento;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
 /* pagina contacto */ 
 
 .contactanos {
@@ -395,13 +455,15 @@ b {
 .preg {
     font-size: 2rem;
     display: inline-block;
-    color: white;
+    color: #F2BB16;
     margin-left: 3rem;
+    margin-top: 6rem;
 }
 
 .mensaje {
     display: inline;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .mensaje-titulo {
@@ -414,9 +476,57 @@ b {
     font-size: 2.5rem;
 }
 
+.labels {
+    text-align: center;
+}
+
+.grid-space {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: auto 20rem auto auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "info info info"
+    "mensaje mensaje mensaje"
+    "relleno relleno relleno"
+    "cuadro cuadro cuadro"
+    "enviar enviar enviar"
+    "footer footer footer";
+    grid-row-gap: 1rem;
+}
+
+.grid-header {
+    grid-area: nav;
+}
+
+.grid-texto {
+    grid-area: info;
+}
+
+.grid-inputs {
+    grid-area: relleno;
+}
+
+.grid-mensaj {
+    grid-area: mensaje;
+}
+
+.grid-clave {
+    grid-area: cuadro;
+}
+
+.grid-boton {
+    grid-area: enviar;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
 /* pagina para celulares */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    
     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -446,6 +556,44 @@ b {
         font-size: 0.2rem;
         margin-left: 0;
     }
+
+    .navbar {
+        margin-bottom: 8rem;
+        margin-left: 20rem;
+    }
+
+    .derechos {
+        font-size: 1rem;
+        display: inline-block;
+        margin: 0;
+        margin-right: 2rem;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 40rem;
+        margin-left: 1rem;
+    }
+
+    .logoslink {
+        width: 12px;
+        height: 12px;
+    }
+
+    .linklogos {
+        width: 10px;
+        height: 10px;
+    }
+
+    .links {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    
+    /* pagina inicio */
 
     .text {
         font-size: 3rem;
@@ -478,17 +626,10 @@ b {
         margin-right: 4rem;
     }
 
-    .derechos {
-        font-size: 1rem;
-        display: inline-block;
-        margin: 0;
-        margin-right: 11rem;
-    }
-
     .slide {
         width: 40rem;
         height: 30rem;
-        margin-left: 8rem;
+        margin-left: 3rem;
         margin-top: 5rem;
         align-items: center;
     }
@@ -498,25 +639,170 @@ b {
         height: 293px;
     }
 
-    footer {
-        display: flex;
+    /* pagina servicios */
+
+    .grid-header {
+        display: grid;
+        grid-template-rows: 6.7rem ;
+        grid-template-areas: 
+        "nav nav nav";
+    }
+
+    .titulo {
+        font-size: 2rem;
+        margin-left: 0;
+        margin-right: 5rem;
+        margin-top: 5rem;
+    }
+
+    .slogan2 {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-right: 5rem;
+        margin-top: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1.9rem;
+        margin-left: 1rem;
+        margin-top: 8rem;
+    }
+
+    .abarcacion {
+        margin-left: 0;
+        margin-bottom: 3rem;
+    }
+
+    .secciones {
         align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        margin-top: 64rem;
-        margin-left: 7rem;
+        margin-left: 1rem;
     }
 
-    .logoslink {
-        width: 12px;
-        height: 12px;
+    .demostrativa {
+        width: 120px;
+        height: 100px;
+        margin-left: 6.4rem;
     }
 
-    .links {
-        display: inline-block;
-        margin-right: 1rem;
+    .h3 {
+        margin-left: 3rem;
     }
 
+    .grid-pie {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    /* pagina nosotros */
+
+    .zona {
+        font-size: 3rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    .texto {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .txt {
+        margin-left: 1rem;
+        display: flex;
+    }
+
+    .imgcostado {
+        width: 200px;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 3, auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "tienda tienda tienda"
+        "imagen imagen imagen"
+        "importante importante mapeado"
+        "footer footer footer"
+        ;
+        grid-row-gap: 1rem;
+    }
+
+    .sede {
+        font-size: 3rem;
+        margin-left: 5rem;
+    }
+
+    .city {
+        font-size: 2rem;
+        margin-left: 5.3rem;
+    }
+
+    .contenido {
+        margin-left: 0.5rem;
+    }
+
+    .map {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* pagina marcas */
+
+    .tit {
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .parrafo {
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .abajo {
+        font-size: 1.8rem;
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+    .recomendaciones {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .imagen-marcas {
+        width: 200px;
+        height: 150px;
+        margin-left: 3.5rem;
+    }
+
+    .click {
+        padding: 8px 25px;
+        margin-left: 2rem;
+    }
+
+    b {
+        font-size: 1rem;
+    }
+
+    .grid-marcas {
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "principal principal principal"
+        "marco marco marco"
+        "movimiento movimiento movimiento"
+        "footer footer footer";
+        grid-row-gap: 1rem;
+    }
 }
 
 /* pagina tablet */
@@ -550,6 +836,10 @@ b {
     .navegacion {
         font-size: 1rem;
         margin-left: 0;
+    }
+    
+    .navbar {
+        display: inline-block;
     }
 
     .text {
@@ -587,14 +877,14 @@ b {
         font-size: 2.3rem;
         display: inline-block;
         margin: 0;
-        margin-right: 11rem;
+        margin-right: 15rem;
     }
 
     .slide {
         width: 70rem;
         height: 50rem;
         margin-top: 7rem;
-        margin-left: 10rem;
+        margin-left: 4rem;
     }
 
     .slide img {
@@ -607,7 +897,7 @@ b {
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        margin-left: 7rem;
+        margin-left: rem;
         margin-bottom: 12rem;
     }
 
@@ -624,7 +914,7 @@ b {
 
 /* pagina desktop */
 
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -650,7 +940,7 @@ b {
     }
 
     .navegacion {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 0;
         margin-bottom: 7.8rem;
         margin-left: 18rem;
