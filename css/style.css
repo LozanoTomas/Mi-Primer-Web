@@ -566,7 +566,7 @@ b {
         font-size: 1rem;
         display: inline-block;
         margin: 0;
-        margin-right: 2rem;
+        margin-right: 11rem;
     }
 
     footer {
@@ -574,8 +574,9 @@ b {
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        margin-top: 40rem;
+        margin-top: 0;
         margin-left: 1rem;
+        margin-bottom: 20rem;
     }
 
     .logoslink {
@@ -610,7 +611,7 @@ b {
     }
 
     .boton {
-        padding: 7px 55px;
+        padding: 10px 55px;
         border: 0.1px solid white;
         margin-left: 3rem;
     }
