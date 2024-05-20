@@ -1,9 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 html {
   font-size: 62.5%;
 }
-
-body {
-  background-image: url(https://c.wallhere.com/photos/e8/eb/pattern_wood-156690.jpg!d);
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+html body {
+  overflow: hidden;
 }/*# sourceMappingURL=styles.css.map */

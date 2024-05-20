@@ -382,6 +382,7 @@ h3 {
     font-size: 2rem;
     margin-left: 9rem;
     margin-bottom: 6rem;
+    width: 550px;
 }
 
 .click {
@@ -497,7 +498,7 @@ b {
     color: #F2BB16;
     font-size: 3.5rem;
     display: inline-block;
-    margin-left: 50rem;
+    margin-left: 25rem;
 }
 
 .preg {
@@ -506,6 +507,8 @@ b {
     color: #F2BB16;
     margin-left: 3rem;
     margin-top: 3rem;
+    width: 1000px;
+    text-align: justify;
 }
 
 .mensaje {
@@ -525,6 +528,21 @@ b {
 
 .labels {
     text-align: center;
+}
+
+.inpiut {
+    width: 200px;
+    height: 40px;
+}
+
+.texta {
+    width: 400px;
+    height: 120px;
+}
+
+.enviar {
+    width: 150px;
+    height: 40px;
 }
 
 .grid-space {
@@ -683,7 +701,7 @@ b {
     }
 
     .slide {
-        width: 25rem;
+        width: 35rem;
         height: 30rem;
         margin-left: 3rem;
         margin-top: 5rem;
@@ -864,19 +882,39 @@ b {
 
     .contactanos {
         font-size: 2rem;
+        margin-left: 15rem;
     }
 
     .preg {
         font-size: 1.5rem;
+        width: 250px;
+        margin-left: 0.5rem;
     }
 
     .mensaje-titulo {
         margin-top: 3rem;
-        font-size: 2rem;
+        font-size: 2.5rem; 
+        margin-left: 0;
     }
 
     .parrafo-abajo {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .inpiut {
+        width: 100px;
+        height: 20px;
+    }
+
+    .texta {
+        width: 120px;
+        height: 60px;
+    }
+    
+    .enviar {
+        width: 70px;
+        height: 20px;
     }
 }
 
@@ -912,9 +950,10 @@ b {
         font-size: 1rem;
         margin-left: 0;
     }
-    
+
     .navbar {
-        display: inline-block;
+        width: 100px;
+        display: flex;
     }
 
     .nav-item {
@@ -922,8 +961,33 @@ b {
     }
 
     .navbar-nav {
-        background-color: #F2BB16;
+        display: flex;
+        background-color: #F2BB16; 
     }
+
+    footer {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30rem;
+    }
+
+    .linklogos {
+        width: 20px;
+        height: 20px;
+    }
+
+    .links {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .derechos {
+        font-size: 2.3rem;
+        display: inline-block;
+    }
+
 
     /* pagina inicio */
 
@@ -958,13 +1022,6 @@ b {
         margin-right: 4rem;
     }
 
-    .derechos {
-        font-size: 2.3rem;
-        display: inline-block;
-        margin: 0;
-        margin-right: 15rem;
-    }
-
     .slide {
         width: 70rem;
         height: 50rem;
@@ -977,26 +1034,35 @@ b {
         height: 492px;
     }
 
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        margin-left: rem;
-        margin-bottom: 12rem;
+    /* pagina servicios */
+
+    .titulo {
+        font-size: 4rem;
+        margin-left: 0;
     }
 
-    .logoslink {
-        width: 20px;
-        height: 20px;
+    .slogan2 {
+        font-size: 2.5rem;
     }
 
-    .links {
-        display: inline-block;
-        margin-right: 1rem;
+    .secciones {
+        margin-left: 2.5rem;
     }
 
-    /* pagina servicios aun no */
+    .abarcacion {
+        display: inline;
+        margin-right: 0;
+    }
+
+    .grid-content {
+        display: grid;
+        grid-template-rows: 10rem auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "que que que"
+        "mucho mucho mucho"
+        "footer footer footer";
+    }
 
     /* pagina nosotros */
 
@@ -1055,6 +1121,94 @@ b {
         margin-bottom: 7rem;
     }
 
+    /* pagina marcas */
+
+    .tit {
+        font-size: 5rem;
+        margin-left: 2rem;
+    }
+
+    .parrafo {
+        font-size: 2rem;
+        margin-left: 2rem;
+        width: 450px;
+    }
+
+    .click {
+        margin-left: 2rem;
+    }
+
+    .imagen-marcas {
+        width: 300px;
+        height: 200px;
+        margin-right: 2rem;
+    }
+
+    .grid-marcas {
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: 10rem auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "principal principlal marco"
+        "movimiento movimiento movimiento"
+        "footer footer footer";
+        grid-row-gap: 1rem;
+    }
+
+    /* pagina contacto */ 
+
+    .contactanos {
+        font-size: 3rem;
+        margin-left: 50rem;
+    }
+
+    .preg {
+        font-size: 2.5rem;
+        width: 550px;
+        margin-left: 0.5rem;
+    }
+
+    .mensaje-titulo {
+        margin-top: 3rem;
+        font-size: 5rem; 
+        margin-left: 0;
+    }
+
+    .parrafo-abajo {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
+    .inpiut {
+        width: 200px;
+        height: 50px;
+    }
+
+    .texta {
+        width: 400px;
+        height: 100px;
+    }
+    
+    .enviar {
+        width: 150px;
+        height: 50px;
+    }
+
+    .grid-space {
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: 10rem 20rem auto auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "info info info"
+        "mensaje mensaje mensaje"
+        "relleno relleno relleno"
+        "cuadro cuadro cuadro"
+        "enviar enviar enviar"
+        "footer footer footer";
+        grid-row-gap: 1rem;
+    }
 }
 
 /* pagina desktop */
@@ -1091,6 +1245,33 @@ b {
         margin-left: 28rem;
     }
 
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 20rem;
+        margin-right: 6rem;
+    }
+
+    .logoslink {
+        width: 18px;
+        height: 18px;
+    }
+
+    .links {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .derechos {
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0;
+        margin-left: 2rem;
+    }
+
     /* pagina inicio */
 
     .text {
@@ -1124,13 +1305,6 @@ b {
         margin-right: 4rem;
     }
 
-    .derechos {
-        font-size: 2rem;
-        display: inline-block;
-        margin: 0;
-        margin-left: 2rem;
-    }
-
     .slide {
         width: 35rem;
         height: 40rem;
@@ -1142,27 +1316,49 @@ b {
         height: 393px;
     }
 
-    footer {
-        display: flex;
+    /* pagina servicios */
+
+    .titulo {
+        font-size: 6rem;
+        margin-left: 0;
+    }
+
+    .slogan2 {
+        font-size: 3rem;
+    }
+
+    .subtitulo {
+        margin-left: 7rem;
+    }
+
+    .secciones {
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        margin-left: 1rem;
-        margin-top: 20rem;
-        margin-right: 6rem;
+        margin-left: 13rem;
     }
 
-    .logoslink {
-        width: 18px;
-        height: 18px;
+    .info {
+        font-size: 2rem;
     }
 
-    .links {
-        display: inline-block;
-        margin-right: 1rem;
+    .sub {
+        font-size: 2rem;
     }
 
-    /* pagina servicios aun no */
+    .abarcacion {
+        display: inline;
+        margin-right: 0;
+    }
+
+    .grid-content {
+        display: grid;
+        grid-template-rows: 8rem auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "que que que"
+        "mucho mucho mucho"
+        "footer footer footer";
+    }
 
     /* pagina nosotros */
 
@@ -1206,6 +1402,106 @@ b {
         margin-right: 0;
         width: 400px;
         height: 400px;
+    }
+
+    /* pagina marcas */ 
+
+    .tit {
+        font-size: 9rem;
+        margin-left: 8rem;
+    }
+
+    .parrafo {
+        font-size: 2.5rem;
+        margin-left: 8rem;
+        width: 670px;
+    }
+
+    .click {
+        margin-left: 8rem;
+    }
+
+    .imagen-marcas {
+        width: 500px;
+        height: 400px;
+        margin-right: 20rem;
+    }
+
+    .click {
+        width: 5rem;
+        background-color: #262626;  
+        display: inline;
+        padding: 20px 88px;
+        border-radius: 1rem;
+        margin-left: 9rem;
+        border: 0.5px solid white;
+    }
+
+    .grid-marcas {
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: 10rem auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "principal principlal marco"
+        "movimiento movimiento movimiento"
+        "footer footer footer";
+        grid-row-gap: 1rem;
+    }
+
+    /* pagina contacto */ 
+
+    .contactanos {
+        font-size: 5rem;
+        margin-left: 70rem;
+        margin-top: 0;
+    }
+
+    .preg {
+        font-size: 2.5rem;
+        width: 600px;
+        margin-left: 3rem;
+    }
+
+    .mensaje-titulo {
+        margin-top: 3rem;
+        font-size: 7rem; 
+        margin-left: 0;
+    }
+
+    .parrafo-abajo {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .inpiut {
+        width: 200px;
+        height: 50px;
+    }
+
+    .texta {
+        width: 400px;
+        height: 100px;
+    }
+    
+    .enviar {
+        width: 150px;
+        height: 50px;
+    }
+
+    .grid-space {
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: 8rem 20rem auto auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "info info info"
+        "mensaje mensaje mensaje"
+        "relleno relleno relleno"
+        "cuadro cuadro cuadro"
+        "enviar enviar enviar"
+        "footer footer footer";
+        grid-row-gap: 1rem;
     }
 
 }
