@@ -1,0 +1,84 @@
+.preg {
+    font-size: 2rem;
+    display: inline-block;
+    color: #F2BB16;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    width: 1000px;
+    text-align: justify;
+}
+.contactanos {
+    color: #F2BB16;
+    font-size: 3.5rem;
+    display: inline-block;
+    margin-left: 25rem;
+}
+.mensaje {
+    display: inline;
+    text-align: center;
+    .mensaje-titulo {
+        color: white;
+        font-size: 4rem;
+    }
+    .parrafo-abajo {
+        color: white;
+        font-size: 2.5rem;
+    }
+}
+.labels {
+    text-align: center;
+    .inpiut {
+        width: 200px;
+        height: 40px;
+    }
+    .texta {
+        width: 400px;
+        height: 120px;
+    }
+    .enviar {
+        width: 150px;
+        height: 40px;
+    }
+}
+.grid-space {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: auto 20rem auto auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "info info info"
+    "mensaje mensaje mensaje"
+    "relleno relleno relleno"
+    "cuadro cuadro cuadro"
+    "enviar enviar enviar"
+    "footer footer footer";
+    grid-row-gap: 1rem;
+}
+
+.grid-header {
+    grid-area: nav;
+}
+
+.grid-texto {
+    grid-area: info;
+}
+
+.grid-inputs {
+    grid-area: relleno;
+}
+
+.grid-mensaj {
+    grid-area: mensaje;
+}
+
+.grid-clave {
+    grid-area: cuadro;
+}
+
+.grid-boton {
+    grid-area: enviar;
+}
+
+.grid-footer {
+    grid-area: footer;
+}

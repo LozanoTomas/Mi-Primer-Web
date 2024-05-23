@@ -2,17 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
+    width: auto;
+    max-width: 1980px;
 }
 
-@import "colors";
-@import "header";
-@import "footer";
+@import 'colors';
+@import 'header';
+@import 'footer';
+@import 'inicio';
+@import 'servicios';
+@import 'nosotros';
+@import 'marcas';
+@import 'contacto';
+@import 'queries';
 
-
-html {
-    font-size: 62.5%;
-    body {
-        overflow: hidden;
-    }
-}

@@ -1,0 +1,113 @@
+.tit {
+    font-size: 7rem;
+    margin-left: 9rem;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    color: #F2BB16;
+}
+.parrafo {
+    font-size: 2rem;
+    margin-left: 9rem;
+    margin-bottom: 6rem;
+    width: 550px;
+    color: #F2BB16;
+}
+a {
+    text-decoration: none;
+    b {
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+.click {
+    width: 5rem;
+    background-color: #262626;  
+    display: inline;
+    padding: 18px 88px;
+    border-radius: 1rem;
+    margin-left: 9rem;
+    border: 0.5px solid white;
+}
+.click:hover {
+    background: #F2BB16;
+    color: #262626;
+}
+.imagen-marcas {
+    width: 600px;
+    height: 400px;
+    margin-top: 7rem;
+    border: 5px solid #F2BB16;
+    margin-right: 6rem;
+}
+.abajo {
+    font-size: 2rem;
+    color: #F2BB16;
+    text-align: center;
+    margin-top: 10rem;
+}
+.slider {
+    width: 1550px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    .slide-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(350px * 12);
+    }
+    .slide {
+        width: 350px;
+        border: none;
+        .img {
+            width: 100%;
+        }
+    }
+}
+@keyframes scroll {
+    0% {
+        -webkit-animation: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-animation: translateX(calc(-350px * 6));
+        transform: translateX(calc(-350px * 6));
+    }
+}
+.recomendaciones {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    color: #F2BB16;
+}
+.grid-marcas {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "principal principlal marco"
+    "movimiento movimiento movimiento"
+    "footer footer footer";
+    grid-row-gap: 1rem;
+}
+
+.grid-header {
+    grid-area: nav;
+}
+
+.grid-mainn {
+    grid-area: principal;
+}
+
+.grid-mosaico {
+    grid-area: marco;
+}
+
+.grid-muestra {
+    grid-area: movimiento;
+}
+
+.grid-footer {
+    grid-area: footer;
+}

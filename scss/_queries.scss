@@ -1,598 +1,4 @@
-/* #262626
-#F2BB16
-#F2E963 */
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    background-image: url(https://c.wallhere.com/photos/e8/eb/pattern_wood-156690.jpg!d);
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-h1 {
-    font-weight: 500;
-    color: #F2BB16;
-}
-
-li {
-    list-style: none;
-    padding: 1rem;
-    margin-left: auto;
-    display: inline-block;
-}
-
-a {
-    text-decoration: none;
-    padding: 1rem;  
-    color: #262626;
-}
-
-li a:hover {
-    background: #262626;
-    color: white;
-}
-
-.logo {
-    height: 70px;
-    width: 70px; 
-    padding: 0.5rem;  
-    box-sizing: border-box;
-}
-
-.tittle {
-    display: inline-block;
-    margin-left: 1.5rem; 
-    font-size: 2.6rem;
-    color: #262626;
-}
-
-.navegacion {
-    font-size: 2.5rem;  
-    margin-left: 97%;
-    margin-top: 1.2rem;
-    display: flex;
-}
-
-p {
-    color: #F2BB16;
-    font-size: 1.5rem;
-}
-
-.contenedor {
-    display: flex;
-    align-items: center;
-}
-
-header {
-    padding-bottom: 0.2rem;
-    background-color: #F2BB16;
-}
-
-footer {
-    color: white;
-    display: inline-block;
-    font-size: 1.5rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-}
-
-.link-footer {
-    color: white;
-}
-
-.link-footer:hover {
-    color: #F2BB16;
-}
-
-h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    display: flex;
-    color: white;
-}
-
-.links {
-    display: inline-block;
-}
-
-.derechos{
-    display: inline-block;
-    color: white;
-}
-
-h3 {
-    color: #F2BB16;
-}
-
-/* pagina de inicio */ 
-
-.slogan {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300px;
-    text-align: justify;
-    margin-left: 9rem;
-    margin-bottom: 5rem;
-    font-size: 2rem;
-}
-
-.boton {
-    width: 5rem;
-    background-color: #262626;  
-    display: inline;
-    padding: 18px 88px;
-    border-radius: 5rem;
-    margin-left: 9rem;
-    border: 0.5px solid white;
-}
-
-.adentro {
-    color: white; 
-}
-
-.text {
-    margin-left: 9rem;
-    font-size: 7rem;
-    margin-bottom: 2.5rem;
-    margin-top: 5rem;
-}
-
-.boton:hover {
-    background-color: #F2BB16;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "nav nav nav"
-        "contenido contenido carousel"
-        "footer footer footer"    
-    ;
-    grid-row-gap: 1rem;
-}
-
-.grid-header {
-    grid-area: nav;
-}
-
-.grid-main {
-    grid-area: contenido;
-}
-
-.grid-carousel {
-    grid-area: carousel;
-}
-
-.grid-footer {
-    grid-area: footer;
-}
-
-.slide {
-    margin-right: 10rem;
-    border: 4px solid #F2BB16;
-    margin-top: 3rem;
-}
-
-.carousel-item {
-    width: 40rem;
-    height: 50rem;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-}
-
-/* pagina de servicios */
-
-.titulo {
-    text-align: center;
-    font-size: 6rem;
-    margin-top: 10rem;
-}
-
-.slogan2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 5rem;
-}
-
-.subtitulo {
-    justify-content: center;
-    font-size: 3.5rem;
-    margin-top: 4rem;
-    color: #F2BB16;
-}
-
-h3 {
-    margin-top: 1rem;
-}
-
-.info {
-    color: white;
-    text-align: justify;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    width: 300px;
-    display: flex;
-}
-
-.demostrativa {
-    width: 300px;
-    height: 280px;
-    border-radius: 1rem;
-}
-
-.secciones {
-    display: inline-block;
-    justify-content: center;
-    margin-right: 5rem;
-    margin-top: 5rem;
-}
-
-.abarcacion {
-    align-items: center;
-    margin-left: 10rem;
-}
-
-.grid-content {
-    display: grid;
-    grid-template-areas: 
-    "nav nav nav"
-    "que que que"
-    "mucho mucho mucho"
-    "footer footer footer";
-}
-
-.grid-header {
-    grid-area: nav;
-}
-
-.grid-que {
-    grid-area: que;
-}
-
-.grid-mucho {
-    grid-area: mucho;
-}
-
-.grid-footer {
-    grid-area: footer;
-}
-
-/* pagina nosotros */ 
-
-.zona {
-    font-size: 6rem;
-    margin-left: 26rem;
-    margin-top: 5.3rem;
-}
-
-.texto {  
-    font-size: 2.5rem;
-    color: #F2BB16;
-}
-
-.imgcostado {
-    width: 600px;
-    height: 850px;
-    margin-left: 4rem;
-    margin-top: 5rem;
-}
-
-.txt {
-    margin-left: 8rem;
-    text-align: justify;
-    margin-top: 3rem;
-}
-
-.imgs {
-   height: 45px;
-   width: 45px;
-   padding: 5px;
-}
-
-.sede {
-    font-size: 5rem;
-    margin-left: 13.8rem; 
-    color: #F2BB16;
-    display: inline;
-}
-
-.city {
-    font-size: 2.5rem;
-    margin-left: 18rem;
-    color: #F2BB16;
-    display: flex;
-}
-
-.contenido {
-    display: flex;
-    margin: 2rem;
-    margin-left: 15rem;
-    align-items: center;
-}
-
-.mini {
-    margin-left: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.map { 
-    margin-right: 8rem;
-    width: 600px; height: 450px;
-}
-
-.grid-contenedor {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto 100rem;
-    grid-template-areas: 
-    "nav nav nav"
-    "tienda tienda imagen"
-    "importante importante mapeado"
-    "footer footer footer"
-    ;
-    grid-row-gap: 1rem;
-}
-
-.grid-header {
-    grid-area: nav;
-}
-
-.grid-seccion {
-    grid-area: tienda;
-}
-
-.grid-image {
-    grid-area: imagen;
-}
-
-.grid-informacion {
-    grid-area: importante;
-}
-
-.grid-localizacion {
-    grid-area: mapeado;
-}
-
-.grid-footer {
-    grid-area: footer;
-}
-
-/* pagina de marcas */ 
-
-.tit {
-    font-size: 7rem;
-    margin-left: 9rem;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
-}
-
-.parrafo {
-    font-size: 2rem;
-    margin-left: 9rem;
-    margin-bottom: 6rem;
-    width: 550px;
-}
-
-.click {
-    width: 5rem;
-    background-color: #262626;  
-    display: inline;
-    padding: 18px 88px;
-    border-radius: 1rem;
-    margin-left: 9rem;
-    border: 0.5px solid white;
-}
-
-b {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.click:hover {
-    background: #F2BB16;
-    color: #262626;
-}
-
-.abajo {
-    font-size: 2rem;
-    color: #F2BB16;
-    text-align: center;
-    margin-top: 10rem;
-}
-
-.recomendaciones {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 4rem;
-}
-
-.imagen-marcas {
-    width: 600px;
-    height: 400px;
-    margin-top: 7rem;
-    border: 5px solid #F2BB16;
-    margin-right: 6rem;
-}
-
-.grid-marcas {
-    display: grid;
-    grid-template-columns: 1, 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "nav nav nav"
-    "principal principlal marco"
-    "movimiento movimiento movimiento"
-    "footer footer footer";
-    grid-row-gap: 1rem;
-}
-
-.grid-header {
-    grid-area: nav;
-}
-
-.grid-mainn {
-    grid-area: principal;
-}
-
-.grid-mosaico {
-    grid-area: marco;
-}
-
-.grid-muestra {
-    grid-area: movimiento;
-}
-
-.grid-footer {
-    grid-area: footer;
-}
-
-.slider {
-    width: 1550px;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slider .slide-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-    width: calc(350px * 12);
-}
-
-.slider .slide {
-    width: 350px;
-    border: none;
-}
-
-.slider .slide .img {
-    width: 100%;
-}
-
-@keyframes scroll {
-    0% {
-        -webkit-animation: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-animation: translateX(calc(-350px * 6));
-        transform: translateX(calc(-350px * 6));
-    }
-}
-
-/* pagina contacto */ 
-
-.contactanos {
-    color: #F2BB16;
-    font-size: 3.5rem;
-    display: inline-block;
-    margin-left: 25rem;
-}
-
-.preg {
-    font-size: 2rem;
-    display: inline-block;
-    color: #F2BB16;
-    margin-left: 3rem;
-    margin-top: 3rem;
-    width: 1000px;
-    text-align: justify;
-}
-
-.mensaje {
-    display: inline;
-    text-align: center;
-}
-
-.mensaje-titulo {
-    color: white;
-    font-size: 4rem;
-}
-
-.parrafo-abajo {
-    color: white;
-    font-size: 2.5rem;
-}
-
-.labels {
-    text-align: center;
-}
-
-.inpiut {
-    width: 200px;
-    height: 40px;
-}
-
-.texta {
-    width: 400px;
-    height: 120px;
-}
-
-.enviar {
-    width: 150px;
-    height: 40px;
-}
-
-.grid-space {
-    display: grid;
-    grid-template-columns: 1, 1fr;
-    grid-template-rows: auto 20rem auto auto;
-    grid-template-areas: 
-    "nav nav nav"
-    "info info info"
-    "mensaje mensaje mensaje"
-    "relleno relleno relleno"
-    "cuadro cuadro cuadro"
-    "enviar enviar enviar"
-    "footer footer footer";
-    grid-row-gap: 1rem;
-}
-
-.grid-header {
-    grid-area: nav;
-}
-
-.grid-texto {
-    grid-area: info;
-}
-
-.grid-inputs {
-    grid-area: relleno;
-}
-
-.grid-mensaj {
-    grid-area: mensaje;
-}
-
-.grid-clave {
-    grid-area: cuadro;
-}
-
-.grid-boton {
-    grid-area: enviar;
-}
-
-.grid-footer {
-    grid-area: footer;
-}
-
-/* pagina para celulares */
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    
     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -604,72 +10,59 @@ b {
             "footer footer footer"    
         ;
         grid-row-gap: 1rem;
+        width: auto;
+        max-width: 767px;
     }
-
-    .logo {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 8rem;
-    }
-
     .tittle {
         font-size: 1.2rem;
         margin-bottom: 8rem;
         margin-left: 0;
     }
-
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8rem;
+    }
     .navegacion {
         font-size: 0.2rem;
         margin-left: 0;
     }
-
     .navbar {
         margin-bottom: 8rem;
         margin-left: 12rem;
     }
-
+    .navbar-nav {
+        background-color: #F2BB16;
+    }
     .nav-item {
         font-size: 2rem;
         justify-content: left;
     }
-
     .nav-item :hover {
         background-color: white;
     }
-
-    .navbar-nav {
-        background-color: #F2BB16;
-    }
-
-    .derechos {
-        font-size: 1rem;
-        display: inline-block;
-    }
-
     footer {
         display: inline-block;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
-
+    .links {
+        display: inline-block;
+        
+    }
+    .derechos {
+        font-size: 1rem;
+        display: inline-block;
+    }
+    
     .logoslink {
         width: 12px;
         height: 12px;
         display: inline-block;
     }
 
-    .linklogos {
-        width: 10px;
-        height: 10px;
-    }
-
-    .links {
-        display: inline-block;
-    }
-    
-    /* pagina inicio */
-
+    /* pagina celular */
     .text {
         font-size: 3rem;
         margin-left: 3rem;
@@ -683,13 +76,13 @@ b {
         margin-bottom: 3rem;
         margin-top: 2rem;
     }
-
-    .boton {
-        padding: 10px 55px;
-        border: 0.1px solid white;
-        margin-left: 3rem;
+    .adentro {
+        .boton {
+            padding: 10px 55px;
+            border: 0.1px solid white;
+            margin-left: 3rem;
+        }
     }
-
     .leer {
         font-size: 1.2rem;
     }
@@ -700,22 +93,18 @@ b {
         margin: 0;
         margin-right: 4rem;
     }
-
     .slide {
         width: 35rem;
         height: 30rem;
         margin-left: 3rem;
         margin-top: 5rem;
         align-items: center;
+        img {
+            width: 100%;
+            height: 293px;
+        }
     }
-
-    .slide img {
-        width: 100%;
-        height: 293px;
-    }
-
     /* pagina servicios */
-
     .grid-header {
         display: grid;
         grid-template-rows: 6.7rem ;
@@ -724,16 +113,16 @@ b {
     }
 
     .titulo {
-        font-size: 2rem;
+        font-size: 2.3rem;
         margin-left: 0;
-        margin-right: 5rem;
+        margin-right: 1rem;
         margin-top: 5rem;
     }
 
     .slogan2 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-left: 0;
-        margin-right: 5rem;
+        margin-right: 1rem;
         margin-top: 2rem;
     }
 
@@ -756,7 +145,7 @@ b {
     .demostrativa {
         width: 120px;
         height: 100px;
-        margin-left: 6.4rem;
+        margin-left: 1rem;
     }
 
     .h3 {
@@ -767,9 +156,7 @@ b {
         margin-top: 3rem;
         margin-left: 0;
     }
-
-    /* pagina nosotros */
-
+    /* nosotros */
     .zona {
         font-size: 3rem;
         margin-left: 2rem;
@@ -824,9 +211,7 @@ b {
         width: 50px;
         height: 50px;
     }
-
-    /* pagina marcas */
-
+    /* marcas */
     .tit {
         font-size: 2rem;
         margin-left: 2rem;
@@ -838,6 +223,7 @@ b {
         font-size: 1rem;
         margin-left: 2rem;
         margin-bottom: 3rem;
+        width: 300px;
     }
 
     .abajo {
@@ -878,17 +264,15 @@ b {
         "footer footer footer";
         grid-row-gap: 1rem;
     }
-
-    /* pagina contacto */
-
+    /* contacto */ 
     .contactanos {
         font-size: 2rem;
-        margin-left: 15rem;
+        margin-left: 28rem;
     }
 
     .preg {
         font-size: 1.5rem;
-        width: 250px;
+        width: 300px;
         margin-left: 0.5rem;
     }
 
@@ -919,13 +303,13 @@ b {
     }
 }
 
-/* pagina tablet */
+/* querie tablet */ 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .grid-container {
         display: grid;
         grid-template-columns: 90rem auto auto auto;
-        grid-template-rows: 10.1rem auto auto 35rem;
+        grid-template-rows: 7.1rem auto auto 35rem;
         grid-template-areas: 
             "nav nav nav"
             "contenido contenido contenido"
@@ -933,6 +317,8 @@ b {
             "footer footer footer"    
         ;
         grid-row-gap: 1rem;
+        width: auto;
+        max-width: 1023px;
     }
 
     .logo {
@@ -1057,7 +443,7 @@ b {
 
     .grid-content {
         display: grid;
-        grid-template-rows: 10rem auto;
+        grid-template-rows: 7rem auto;
         grid-template-areas: 
         "nav nav nav"
         "que que que"
@@ -1088,7 +474,7 @@ b {
     .grid-contenedor {
         display: grid;
         grid-template-columns: 3, auto;
-        grid-template-rows: 10rem auto auto auto auto;
+        grid-template-rows: 7rem auto auto auto auto;
         grid-template-areas: 
         "nav nav nav"
         "tienda tienda tienda"
@@ -1148,7 +534,7 @@ b {
     .grid-marcas {
         display: grid;
         grid-template-columns: 1, 1fr;
-        grid-template-rows: 10rem auto;
+        grid-template-rows: 7rem auto;
         grid-template-areas: 
         "nav nav nav"
         "principal principlal marco"
@@ -1199,7 +585,7 @@ b {
     .grid-space {
         display: grid;
         grid-template-columns: 1, 1fr;
-        grid-template-rows: 10rem 20rem auto auto;
+        grid-template-rows: 7rem 20rem auto auto;
         grid-template-areas: 
         "nav nav nav"
         "info info info"
@@ -1212,9 +598,9 @@ b {
     }
 }
 
-/* pagina desktop */
+/* desktop */
 
-@media screen and (min-width: 1024px) and (max-width: 1348px) {
+@media screen and (min-width: 1024px) and (max-width: 1340px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1225,6 +611,8 @@ b {
             "footer footer footer"    
         ;
         grid-row-gap: 1rem;
+        width: auto;
+        max-width: 1980px;
     }
 
     .logo {
@@ -1243,7 +631,7 @@ b {
         font-size: 1.5rem;
         margin: 0;
         margin-bottom: 7.8rem;
-        margin-left: 28rem;
+        margin-left: 2rem;
     }
 
     footer {
@@ -1506,5 +894,3 @@ b {
     }
 
 }
-
-

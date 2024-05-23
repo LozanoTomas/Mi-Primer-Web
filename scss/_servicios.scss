@@ -1,0 +1,71 @@
+.titulo {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 10rem;
+    color: #F2BB16;
+}
+.slogan2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    color: #F2BB16;
+}
+.abarcacion {
+    align-items: center;
+    margin-left: 10rem;
+    .subtitulo {
+        justify-content: center;
+        font-size: 3.5rem;
+        margin-top: 4rem;
+        color: #F2BB16;
+    }
+    .secciones {
+        display: inline-block;
+        justify-content: center;
+        margin-right: 5rem;
+        margin-top: 5rem;
+        .sub {
+            color: #F2BB16;
+        }
+        .demostrativa {
+            width: 300px;
+            height: 280px;
+            border-radius: 1rem;
+        }
+        .info {
+            color: white;
+            text-align: justify;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            width: 300px;
+            display: flex;
+        }
+    }
+}
+h3 {
+    margin-top: 1rem;
+}
+.grid-content {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "que que que"
+    "mucho mucho mucho"
+    "footer footer footer";
+}
+
+.grid-header {
+    grid-area: nav;
+}
+
+.grid-que {
+    grid-area: que;
+}
+
+.grid-mucho {
+    grid-area: mucho;
+}
+
+.grid-footer {
+    grid-area: footer;
+}

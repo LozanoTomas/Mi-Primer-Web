@@ -1,0 +1,31 @@
+footer {
+    color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    .links {
+        display: inline-block;
+        text-decoration: none;
+        .link-footer {
+            color: white;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        .link-footer:hover {
+            color: #F2BB16;
+        }
+    }
+    .derechos{
+        display: inline-block;
+        color: white;
+    }
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    color: white;
+}
