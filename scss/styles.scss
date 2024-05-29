@@ -6,6 +6,11 @@
     max-width: 1980px;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 @import 'colors';
 @import 'header';
 @import 'footer';

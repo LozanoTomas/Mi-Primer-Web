@@ -6,6 +6,11 @@
   max-width: 1980px;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -49,7 +54,7 @@ html body header nav .contenedor .navegacion li {
 html body header nav .contenedor .navegacion li a {
   text-decoration: none;
   padding: 1rem;
-  color: #262626;
+  color: #575252;
 }
 html body header nav .contenedor .navegacion li a:hover {
   background: #262626;
@@ -58,9 +63,9 @@ html body header nav .contenedor .navegacion li a:hover {
 
 footer {
   color: white;
-  display: inline-block;
+  display: flex;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
@@ -541,7 +546,7 @@ a b {
     max-width: 767px;
   }
   .tittle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 8rem;
     margin-left: 0;
   }
@@ -586,23 +591,28 @@ a b {
     height: 12px;
     display: inline-block;
   }
+  .navbar {
+    margin: 0;
+    margin-bottom: 8rem;
+    margin-left: 3rem;
+  }
   /* pagina celular */
   .text {
-    font-size: 3rem;
-    margin-left: 3rem;
+    font-size: 2.5rem;
+    margin-left: 1rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
   .slogan {
-    font-size: 1.5rem;
-    margin-left: 3rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
   .adentro .boton {
     padding: 10px 55px;
     border: 0.1px solid white;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .leer {
     font-size: 1.2rem;
@@ -614,15 +624,15 @@ a b {
     margin-right: 4rem;
   }
   .slide {
-    width: 35rem;
-    height: 30rem;
-    margin-left: 3rem;
+    width: 30rem;
+    height: 25rem;
+    margin-left: 1rem;
     margin-top: 5rem;
     align-items: center;
   }
   .slide img {
     width: 100%;
-    height: 293px;
+    height: 243px;
   }
   /* pagina servicios */
   .grid-header {
@@ -633,13 +643,13 @@ a b {
   .titulo {
     font-size: 2.3rem;
     margin-left: 0;
-    margin-right: 1rem;
     margin-top: 5rem;
+    margin-right: 5rem;
   }
   .slogan2 {
     font-size: 1.1rem;
     margin-left: 0;
-    margin-right: 1rem;
+    margin-right: 5rem;
     margin-top: 2rem;
   }
   .subtitulo {
@@ -656,9 +666,9 @@ a b {
     margin-left: 1rem;
   }
   .demostrativa {
-    width: 120px;
+    width: 100px;
     height: 100px;
-    margin-left: 1rem;
+    margin-left: 0;
   }
   .h3 {
     margin-left: 3rem;
@@ -752,7 +762,7 @@ a b {
   /* contacto */
   .contactanos {
     font-size: 2rem;
-    margin-left: 28rem;
+    margin-left: 20rem;
   }
   .preg {
     font-size: 1.5rem;
