@@ -12,6 +12,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.nav-link {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+}
+
+.nav-link:hover {
+    background-color: #262626;
+    color: white;
+}
+
+.navbar-nav {
+    margin-left: 100%;
+}
+
 h3 {
     font-size: 2rem;
 }
@@ -44,6 +62,7 @@ li a:hover {
     width: 70px; 
     padding: 0.5rem;  
     box-sizing: border-box;
+    margin-right: 2rem;
 }
 
 .tittle {
@@ -609,7 +628,7 @@ b {
     .logo {
         width: 50px;
         height: 50px;
-        margin-bottom: 8rem;
+        margin-right: 1rem;
     }
 
     .tittle {
@@ -623,17 +642,22 @@ b {
         margin-left: 0;
     }
 
-    .nav-item {
-        font-size: 2rem;
-        justify-content: left;
-    }
-
-    .nav-item :hover {
-        background-color: white;
-    }
-
     .navbar-nav {
         background-color: #F2BB16;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .navbar-brand {
+        font-size: 1.7rem;
     }
 
     .derechos {

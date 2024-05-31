@@ -1,8 +1,8 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@include celular {
     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        grid-template-rows: 6.7rem auto auto 35rem;
+        grid-template-rows: 10rem auto auto 35rem;
         grid-template-areas: 
             "nav nav nav"
             "contenido contenido contenido"
@@ -13,34 +13,41 @@
         width: auto;
         max-width: 767px;
     }
-    .tittle {
-        font-size: 1.4rem;
-        margin-bottom: 8rem;
-        margin-left: 0;
-    }
     .logo {
         width: 50px;
         height: 50px;
-        margin-bottom: 8rem;
+        margin-right: 1rem;
     }
+
+    .tittle {
+        font-size: 1.2rem;
+        margin-bottom: 8rem;
+        margin-left: 0;
+    }
+    
     .navegacion {
         font-size: 0.2rem;
         margin-left: 0;
     }
-    .navbar {
-        margin-bottom: 8rem;
-        margin-left: 12rem;
-    }
+
     .navbar-nav {
         background-color: #F2BB16;
+        margin: 0;
     }
+
     .nav-item {
-        font-size: 2rem;
-        justify-content: left;
+        margin: 0;
     }
-    .nav-item :hover {
-        background-color: white;
+
+    .nav-link {
+        font-size: 1.8rem;
+        text-align: left;
     }
+
+    .navbar-brand {
+        font-size: 1.7rem;
+    }
+
     footer {
         display: inline-block;
         text-align: center;
@@ -60,12 +67,6 @@
         width: 12px;
         height: 12px;
         display: inline-block;
-    }
-
-    .navbar {
-        margin: 0;
-        margin-bottom: 8rem;
-        margin-left: 3rem;
     }
 
     /* pagina celular */
@@ -113,7 +114,7 @@
     /* pagina servicios */
     .grid-header {
         display: grid;
-        grid-template-rows: 6.7rem ;
+        grid-template-rows: 3rem 6.7rem ;
         grid-template-areas: 
         "nav nav nav";
     }
@@ -172,6 +173,7 @@
     .texto {
         font-size: 1rem;
         margin-left: 0;
+        width: 300px;
     }
 
     .txt {
@@ -188,7 +190,7 @@
     .grid-contenedor {
         display: grid;
         grid-template-columns: 3, auto;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: 10rem auto auto auto auto;
         grid-template-areas: 
         "nav nav nav"
         "tienda tienda tienda"
@@ -261,7 +263,7 @@
     .grid-marcas {
         display: grid;
         grid-template-columns: 1, 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 10rem auto;
         grid-template-areas: 
         "nav nav nav"
         "principal principal principal"
@@ -283,8 +285,8 @@
     }
 
     .mensaje-titulo {
-        margin-top: 3rem;
-        font-size: 2.5rem; 
+        margin-top: 2rem;
+        font-size: 0.1rem; 
         margin-left: 0;
     }
 
@@ -311,11 +313,11 @@
 
 /* querie tablet */ 
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@include tablet {
     .grid-container {
         display: grid;
         grid-template-columns: 90rem auto auto auto;
-        grid-template-rows: 7.1rem auto auto 35rem;
+        grid-template-rows: 10rem auto auto 35rem;
         grid-template-areas: 
             "nav nav nav"
             "contenido contenido contenido"
@@ -328,34 +330,41 @@
     }
 
     .logo {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 8rem;
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
     }
 
     .tittle {
-        font-size: 2.9rem;
-        margin-bottom: 8rem;
+        font-size: 1.2rem;
         margin-left: 0;
     }
-
+    
     .navegacion {
-        font-size: 1rem;
+        font-size: 0.2rem;
         margin-left: 0;
     }
 
     .navbar {
-        width: 100px;
-        display: flex;
-    }
-
-    .nav-item {
-        font-size: 2rem;
+        margin: 0;
     }
 
     .navbar-nav {
-        display: flex;
-        background-color: #F2BB16; 
+        background-color: #F2BB16;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .navbar-brand {
+        font-size: 1.7rem;
     }
 
     footer {
@@ -449,7 +458,7 @@
 
     .grid-content {
         display: grid;
-        grid-template-rows: 7rem auto;
+        grid-template-rows: 10rem auto;
         grid-template-areas: 
         "nav nav nav"
         "que que que"
@@ -480,7 +489,7 @@
     .grid-contenedor {
         display: grid;
         grid-template-columns: 3, auto;
-        grid-template-rows: 7rem auto auto auto auto;
+        grid-template-rows: 10rem auto auto auto auto;
         grid-template-areas: 
         "nav nav nav"
         "tienda tienda tienda"
@@ -509,11 +518,6 @@
         font-size: 2rem;
     }
 
-    .navbar {
-        margin-left: 30rem;
-        margin-bottom: 7rem;
-    }
-
     /* pagina marcas */
 
     .tit {
@@ -540,7 +544,7 @@
     .grid-marcas {
         display: grid;
         grid-template-columns: 1, 1fr;
-        grid-template-rows: 7rem auto;
+        grid-template-rows: 10rem auto;
         grid-template-areas: 
         "nav nav nav"
         "principal principlal marco"
@@ -591,7 +595,7 @@
     .grid-space {
         display: grid;
         grid-template-columns: 1, 1fr;
-        grid-template-rows: 7rem 20rem auto auto;
+        grid-template-rows: 10rem 20rem auto auto;
         grid-template-areas: 
         "nav nav nav"
         "info info info"
@@ -606,11 +610,11 @@
 
 /* desktop */
 
-@media screen and (min-width: 1024px) and (max-width: 1340px) {
+@include desktop {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 8rem auto auto auto;
+        grid-template-rows: 10rem auto auto auto;
         grid-template-areas: 
             "nav nav nav"
             "contenido contenido carousel"
@@ -624,20 +628,36 @@
     .logo {
         width: 60px;
         height: 60px;
-        margin-bottom: 8rem;
     }
 
     .tittle {
         font-size: 2.3rem;
-        margin-bottom: 8rem;
         margin-left: 0;
     }
 
-    .navegacion {
-        font-size: 1.5rem;
+    .nav-link {
+        font-size: 2.5rem;
+        color: black;
+    }
+    
+    .navbar-brand {
+        font-size: 2.5rem;
         margin: 0;
+    }
+    
+    .nav-link:hover {
+        background-color: #262626;
+        color: white;
+    }
+    
+    .navbar-nav {
+        margin-left: 20%;
+    }
+
+    ul.navegacion {
+        font-size: 1.5rem;
         margin-bottom: 7.8rem;
-        margin-left: 2rem;
+        margin-left: 0rem;
     }
 
     footer {
@@ -747,7 +767,7 @@
 
     .grid-content {
         display: grid;
-        grid-template-rows: 8rem auto;
+        grid-template-rows: 10rem auto;
         grid-template-areas: 
         "nav nav nav"
         "que que que"
@@ -783,7 +803,7 @@
     .grid-contenedor {
         display: grid;
         grid-template-columns: repeat(2, 600px);
-        grid-template-rows: 8rem auto auto auto auto;
+        grid-template-rows: 10rem auto auto auto auto;
         grid-template-areas: 
         "nav nav nav"
         "tienda imagen imagen"
@@ -887,7 +907,7 @@
     .grid-space {
         display: grid;
         grid-template-columns: 1, 1fr;
-        grid-template-rows: 8rem 20rem auto auto;
+        grid-template-rows: 10rem 20rem auto auto;
         grid-template-areas: 
         "nav nav nav"
         "info info info"

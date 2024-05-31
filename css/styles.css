@@ -33,10 +33,12 @@ html body header nav .contenedor .logo {
   padding: 0.5rem;
   box-sizing: border-box;
   margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
 }
 html body header nav .contenedor .tittle {
   display: inline-block;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   font-size: 2.6rem;
 }
 html body header nav .contenedor .navegacion {
@@ -54,18 +56,38 @@ html body header nav .contenedor .navegacion li {
 html body header nav .contenedor .navegacion li a {
   text-decoration: none;
   padding: 1rem;
-  color: #575252;
+  color: black;
 }
 html body header nav .contenedor .navegacion li a:hover {
   background: #262626;
   color: white;
 }
 
+.nav-link {
+  font-size: 2.5rem;
+  color: black;
+  margin-left: 2rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  margin-right: 3rem;
+}
+
+.nav-link:hover {
+  background-color: #262626;
+  color: white;
+}
+
+.navbar-nav {
+  margin-left: 110%;
+}
+
 footer {
   color: white;
-  display: flex;
+  display: inline;
   font-size: 1.5rem;
-  text-align: left;
+  text-align: center;
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
@@ -539,39 +561,39 @@ a b {
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 6.7rem auto auto 35rem;
+    grid-template-rows: 10rem auto auto 35rem;
     grid-template-areas: "nav nav nav" "contenido contenido contenido" "carousel carousel carousel" "footer footer footer";
     grid-row-gap: 1rem;
     width: auto;
     max-width: 767px;
   }
-  .tittle {
-    font-size: 1.4rem;
-    margin-bottom: 8rem;
-    margin-left: 0;
-  }
   .logo {
     width: 50px;
     height: 50px;
+    margin-right: 1rem;
+  }
+  .tittle {
+    font-size: 1.2rem;
     margin-bottom: 8rem;
+    margin-left: 0;
   }
   .navegacion {
     font-size: 0.2rem;
     margin-left: 0;
   }
-  .navbar {
-    margin-bottom: 8rem;
-    margin-left: 12rem;
-  }
   .navbar-nav {
     background-color: #F2BB16;
+    margin: 0;
   }
   .nav-item {
-    font-size: 2rem;
-    justify-content: left;
+    margin: 0;
   }
-  .nav-item :hover {
-    background-color: white;
+  .nav-link {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  .navbar-brand {
+    font-size: 1.7rem;
   }
   footer {
     display: inline-block;
@@ -590,11 +612,6 @@ a b {
     width: 12px;
     height: 12px;
     display: inline-block;
-  }
-  .navbar {
-    margin: 0;
-    margin-bottom: 8rem;
-    margin-left: 3rem;
   }
   /* pagina celular */
   .text {
@@ -637,7 +654,7 @@ a b {
   /* pagina servicios */
   .grid-header {
     display: grid;
-    grid-template-rows: 6.7rem;
+    grid-template-rows: 3rem 6.7rem;
     grid-template-areas: "nav nav nav";
   }
   .titulo {
@@ -686,6 +703,7 @@ a b {
   .texto {
     font-size: 1rem;
     margin-left: 0;
+    width: 300px;
   }
   .txt {
     margin-left: 1rem;
@@ -699,7 +717,7 @@ a b {
   .grid-contenedor {
     display: grid;
     grid-template-columns: 3, auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: 10rem auto auto auto auto;
     grid-template-areas: "nav nav nav" "tienda tienda tienda" "imagen imagen imagen" "importante importante mapeado" "footer footer footer";
     grid-row-gap: 1rem;
   }
@@ -755,7 +773,7 @@ a b {
   .grid-marcas {
     display: grid;
     grid-template-columns: 1, 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 10rem auto;
     grid-template-areas: "nav nav nav" "principal principal principal" "marco marco marco" "movimiento movimiento movimiento" "footer footer footer";
     grid-row-gap: 1rem;
   }
@@ -770,8 +788,8 @@ a b {
     margin-left: 0.5rem;
   }
   .mensaje-titulo {
-    margin-top: 3rem;
-    font-size: 2.5rem;
+    margin-top: 2rem;
+    font-size: 0.1rem;
     margin-left: 0;
   }
   .parrafo-abajo {
@@ -796,36 +814,41 @@ a b {
   .grid-container {
     display: grid;
     grid-template-columns: 90rem auto auto auto;
-    grid-template-rows: 7.1rem auto auto 35rem;
+    grid-template-rows: 10rem auto auto 35rem;
     grid-template-areas: "nav nav nav" "contenido contenido contenido" "carousel carousel carousel" "footer footer footer";
     grid-row-gap: 1rem;
     width: auto;
     max-width: 1023px;
   }
   .logo {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 8rem;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
   }
   .tittle {
-    font-size: 2.9rem;
-    margin-bottom: 8rem;
+    font-size: 1.2rem;
     margin-left: 0;
   }
   .navegacion {
-    font-size: 1rem;
+    font-size: 0.2rem;
     margin-left: 0;
   }
   .navbar {
-    width: 100px;
-    display: flex;
-  }
-  .nav-item {
-    font-size: 2rem;
+    margin: 0;
   }
   .navbar-nav {
-    display: flex;
     background-color: #F2BB16;
+    margin: 0;
+  }
+  .nav-item {
+    margin: 0;
+  }
+  .nav-link {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  .navbar-brand {
+    font-size: 1.7rem;
   }
   footer {
     display: inline-block;
@@ -900,7 +923,7 @@ a b {
   }
   .grid-content {
     display: grid;
-    grid-template-rows: 7rem auto;
+    grid-template-rows: 10rem auto;
     grid-template-areas: "nav nav nav" "que que que" "mucho mucho mucho" "footer footer footer";
   }
   /* pagina nosotros */
@@ -921,7 +944,7 @@ a b {
   .grid-contenedor {
     display: grid;
     grid-template-columns: 3, auto;
-    grid-template-rows: 7rem auto auto auto auto;
+    grid-template-rows: 10rem auto auto auto auto;
     grid-template-areas: "nav nav nav" "tienda tienda tienda" "imagen imagen imagen" "importante importante mapeado" "footer footer footer";
     grid-row-gap: 1rem;
   }
@@ -938,10 +961,6 @@ a b {
   }
   .mini {
     font-size: 2rem;
-  }
-  .navbar {
-    margin-left: 30rem;
-    margin-bottom: 7rem;
   }
   /* pagina marcas */
   .tit {
@@ -964,7 +983,7 @@ a b {
   .grid-marcas {
     display: grid;
     grid-template-columns: 1, 1fr;
-    grid-template-rows: 7rem auto;
+    grid-template-rows: 10rem auto;
     grid-template-areas: "nav nav nav" "principal principlal marco" "movimiento movimiento movimiento" "footer footer footer";
     grid-row-gap: 1rem;
   }
@@ -1002,7 +1021,7 @@ a b {
   .grid-space {
     display: grid;
     grid-template-columns: 1, 1fr;
-    grid-template-rows: 7rem 20rem auto auto;
+    grid-template-rows: 10rem 20rem auto auto;
     grid-template-areas: "nav nav nav" "info info info" "mensaje mensaje mensaje" "relleno relleno relleno" "cuadro cuadro cuadro" "enviar enviar enviar" "footer footer footer";
     grid-row-gap: 1rem;
   }
@@ -1012,7 +1031,7 @@ a b {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 8rem auto auto auto;
+    grid-template-rows: 10rem auto auto auto;
     grid-template-areas: "nav nav nav" "contenido contenido carousel" "footer footer footer";
     grid-row-gap: 1rem;
     width: auto;
@@ -1021,18 +1040,30 @@ a b {
   .logo {
     width: 60px;
     height: 60px;
-    margin-bottom: 8rem;
   }
   .tittle {
     font-size: 2.3rem;
-    margin-bottom: 8rem;
     margin-left: 0;
   }
-  .navegacion {
-    font-size: 1.5rem;
+  .nav-link {
+    font-size: 2.5rem;
+    color: black;
+  }
+  .navbar-brand {
+    font-size: 2.5rem;
     margin: 0;
+  }
+  .nav-link:hover {
+    background-color: #262626;
+    color: white;
+  }
+  .navbar-nav {
+    margin-left: 20%;
+  }
+  ul.navegacion {
+    font-size: 1.5rem;
     margin-bottom: 7.8rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
   }
   footer {
     display: flex;
@@ -1121,7 +1152,7 @@ a b {
   }
   .grid-content {
     display: grid;
-    grid-template-rows: 8rem auto;
+    grid-template-rows: 10rem auto;
     grid-template-areas: "nav nav nav" "que que que" "mucho mucho mucho" "footer footer footer";
   }
   /* pagina nosotros */
@@ -1147,7 +1178,7 @@ a b {
   .grid-contenedor {
     display: grid;
     grid-template-columns: repeat(2, 600px);
-    grid-template-rows: 8rem auto auto auto auto;
+    grid-template-rows: 10rem auto auto auto auto;
     grid-template-areas: "nav nav nav" "tienda imagen imagen" "importante mapeado mapeado" "footer footer footer";
     grid-row-gap: 1rem;
   }
@@ -1225,7 +1256,7 @@ a b {
   .grid-space {
     display: grid;
     grid-template-columns: 1, 1fr;
-    grid-template-rows: 8rem 20rem auto auto;
+    grid-template-rows: 10rem 20rem auto auto;
     grid-template-areas: "nav nav nav" "info info info" "mensaje mensaje mensaje" "relleno relleno relleno" "cuadro cuadro cuadro" "enviar enviar enviar" "footer footer footer";
     grid-row-gap: 1rem;
   }
